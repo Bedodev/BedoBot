@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.0.1",
+    "lavacord": "^2.2.0",
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "deploy": "node ./scripts/deploy_commands.js",
+    "lint": "eslint . --ext .js,.ts"
+  }
+}
