@@ -1,9 +1,9 @@
-const { SlashCommandBuilder, MessageFlags } = required('discord.js');
+const { SlashCommandBuilder, MessageFlags } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('help')
-        .seDescription('Get a list of available commands and their descriptions.'),
+        .setDescription('Get a list of available commands and their descriptions.'),
     async execute(interaction) {
         const commands = interaction.client.commands.map(cmd => {
             return `**/${cmd.data.name}**: ${cmd.data.description}`;

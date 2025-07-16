@@ -18,7 +18,7 @@ module.exports = {
         const channel = interaction.options.getChannel('channel');
 
         // Check if the channel is a voice channel
-        if (!channel.isVoice()) {
+        if (!channel.isVoiceBased()) {
             return interaction.reply({
                 content: 'The specified channel is not a voice channel.',
                 flags: MessageFlags.Ephemeral
